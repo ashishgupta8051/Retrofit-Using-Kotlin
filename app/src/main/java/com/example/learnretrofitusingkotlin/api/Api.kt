@@ -35,7 +35,7 @@ interface Api {
     @FormUrlEncoded
     @POST("posts")
     suspend fun pushPost2(
-        @Field("userId") userId: Int,
+        @Field("https://jsonplaceholder.typicode.com") userId: Int,
         @Field("id") id: Int,
         @Field("title") title: String,
         @Field("body") body: String,
